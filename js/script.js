@@ -21,7 +21,8 @@ if(age<18){
     cost = (cost-(cost / 100)*40)
 }
 console.log(cost);
+let cost2d = cost.toFixed(2);
 
 const resultCost = document.getElementById('result');
 
-resultCost.innerText = `Il costo del treno è ${cost}`;
+resultCost.innerText = `Il costo del treno è ${cost2d}`;
