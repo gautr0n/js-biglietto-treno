@@ -1,28 +1,23 @@
+//chiedere nome e cognome
 //chiedere il numero di km
 //chiedere l'eta
+//moltiplicare i km * 0.21
 //va applicato uno sconto del 20% per i minorenni
 //va applicato uno sconto del 40% per gli over 65
 //stampa il risultato con massimo 2 cifre decimali
 
-const formatter = new Intl.NumberFormat('en-US', {
-    minimumFractionDigits: 2,
-    maximumFractionDigits: 2,
-});
+const nameField = document.getElementById('name');
+const kmField = document.getElementById('km');
+const ageField = document.getElementById('age');
+const confirmField = document.getElementById('confirm-button');
+const cancelButton = document.getElementById('cancel-button');
+const buyButton = document.getElementById('buy-button');
 
-let km = parseInt(prompt('inserire i km da percorrere', '6'));
-let age = parseInt(prompt('inserire la propria età', '21'));
+const ticketSection = document.getElementById('ticket-section');
+const passengerElement = document.getElementById('passenger-name');
+const rateElement = document.getElementById('rate');
+const carElement = document.getElementById('car');
+const pnrElement = document.getElementById('pnr');
+const priceElement = document.getElementById('price');
 
-let cost = (km * 0.21);
-console.log(cost);
-
-if(age<18){
-    cost = (cost-(cost / 100)*20)
-}else if(age>65){
-    cost = (cost-(cost / 100)*40)
-}
-console.log(cost);
-let cost2d = cost.toFixed(2);
-
-const resultCost = document.getElementById('result');
-
-resultCost.innerText = `Il costo del treno è ${cost2d}`;
+priceElement.innerText = '&euro ' + price.toFixed(2);
