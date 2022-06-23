@@ -7,7 +7,7 @@
 //stampa il risultato con massimo 2 cifre decimali
 
 const nameField = document.getElementById('name');
-const kmField = document.getElementById('km');
+const kmsField = document.getElementById('kms');
 const ageField = document.getElementById('age');
 const confirmField = document.getElementById('confirm-button');
 const cancelButton = document.getElementById('cancel-button');
@@ -18,6 +18,6 @@ const passengerElement = document.getElementById('passenger-name');
 const rateElement = document.getElementById('rate');
 const carElement = document.getElementById('car');
 const pnrElement = document.getElementById('pnr');
-const priceElement = document.getElementById('price');
+const priceElement = document.getElementById('priceq');
 
 priceElement.innerText = '&euro ' + price.toFixed(2);
