@@ -28,10 +28,19 @@
                             <input type="number" class="form-control" id="kms" value="35" min="1" max="1000" step="1">
                         </div>
                         <div class="mb-3">
-                            <label for="age" class="name">Età</label>
-                            <input type="number" class="form-control" id="age" value="21" min="1" max="100" step="1">
+                            <label for="age" class="name">Fascia d'età</label>
+                            <select class="form-select" id="age">
+                                <option selected>Open this select menu</option>
+                                <option value="min">Maggiorenne</option>
+                                <option value="mag">Minorenne</option>
+                                <option value="over">Over 65</option>
+                              </select>
                         </div>
                     </div>
+                </div>
+                <div class="card-footer d-flex justify-content-end">
+                    <button type="button" class="btn btn-secondary me-3" id="cancel-button">Annulla</button>
+                    <button type="button" class="btn btn-primary" id="confirm-button">Conferma</button>
                 </div>
             </div>
         </section>

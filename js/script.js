@@ -20,4 +20,4 @@ const carElement = document.getElementById('car');
 const pnrElement = document.getElementById('pnr');
 const priceElement = document.getElementById('priceq');
 
-priceElement.innerText = '&euro ' + price.toFixed(2);
+
