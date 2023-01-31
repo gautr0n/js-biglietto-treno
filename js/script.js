@@ -9,11 +9,17 @@ let ticketCost = totalKilometers * 0.21;
 console.log(ticketCost);
 
 //3 calcolare sconti
+let discount;
+
 if (personalAge < 18){
-    ticketCost = ticketCost - (ticketCost * 0.20);
+    discount = ticketCost * 0.20;
+    ticketCost = ticketCost - discount;
+    console.log(discount);
     console.log(ticketCost);
 } else if (personalAge > 65){
-    ticketCost = ticketCost - (ticketCost * 0.40);
+    discount = ticketCost * 0.40;
+    ticketCost = ticketCost - discount;
+    console.log(discount);
     console.log(ticketCost);
 } else{
     console.log(ticketCost);
