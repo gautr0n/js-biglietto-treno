@@ -13,24 +13,29 @@ let ticketCost = totalKilometers * 0.21;
 console.log(ticketCost);
 
 //3 calcolare sconti
-let discountAmmount;
+let discountAmmount, ticketDiscounted;
 
 if (personalAge < 18){
-    discountAmmount = ticketCost * 0.20;
-    ticketCost = ticketCost - discountAmmount;
+    discountAmmount = (ticketCost * 0.20);
+    ticketDiscounted = ticketCost - discountAmmount;
     console.log(discountAmmount);
-    console.log(ticketCost);
+    console.log(ticketDiscounted);
 } else if (personalAge > 65){
     discountAmmount = ticketCost * 0.40;
-    ticketCost = ticketCost - discountAmmount;
+    ticketDiscounted = ticketCost - discountAmmount;
     console.log(discountAmmount);
-    console.log(ticketCost);
+    console.log(ticketDiscounted);
 } else{
+    discountAmmount = 0
+    ticketDiscounted = ticketCost
+    console.log(discountAmmount);
     console.log(ticketCost);
 }
 
 //4 emettere il risultato con massimo due cifre decimali
 ticketCost = ticketCost.toFixed(2);
+discountAmmount = discountAmmount.toFixed(2);
+ticketDiscounted = ticketDiscounted.toFixed(2);
 console.log(ticketCost);
 
 //5 stampare tutto a video
@@ -40,3 +45,8 @@ const price = document.getElementById('price');
 const discount = document.getElementById('discount');
 const finalPrice = document.getElementById('finalPrice');
 
+nameSurname.innerText = `${name} ${surname}`;
+kilometers.innerText = `${totalKilometers}km`;
+price.innerText = `${ticketCost}$`;
+discount.innerText = `${discountAmmount}$`;
+finalPrice.innerText = `${ticketDiscounted}$`;
