@@ -5,11 +5,18 @@ console.log(personalAge);
 console.log(totalKilometers);
 
 //2 calcolare costo
-const ticketCost = totalKilometers * 0.21;
+let ticketCost = totalKilometers * 0.21;
 console.log(ticketCost);
 
 //3 calcolare sconti
+if (personalAge < 18){
+    ticketCost = ticketCost - (ticketCost * 0.20);
+    console.log(ticketCost);
+} else if (personalAge > 65){
+    ticketCost = ticketCost - (ticketCost * 0.40);
+    console.log(ticketCost);
+} else{
+    console.log(ticketCost);
+}
 
-
-
-//4 emettere il risultato
+//4 emettere il risultato con massimo due cifre decimali
