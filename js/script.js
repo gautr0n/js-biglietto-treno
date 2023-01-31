@@ -20,3 +20,5 @@ if (personalAge < 18){
 }
 
 //4 emettere il risultato con massimo due cifre decimali
+ticketCost = ticketCost.toFixed(2);
+console.log(ticketCost);
